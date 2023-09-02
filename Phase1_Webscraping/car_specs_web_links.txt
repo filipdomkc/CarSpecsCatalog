@@ -1,0 +1,66 @@
+start_url = https://www.cars-data.com/en/car-brands-cars-logos.html
+
+			MINI 									Mercedes
+
+step1(models):		https://www.cars-data.com/en/mini					https://www.cars-data.com/en/mercedes-benz
+step2(model-year):	https://www.cars-data.com/en/mini/mini					https://www.cars-data.com/en/mercedes-benz/cla-coupe
+step3:			https://www.cars-data.com/en/mercedes-benz-cla-coupe-2019/4262		https://www.cars-data.com/en/mercedes-benz-cla-coupe-2019/4262
+step4:			https://www.cars-data.com/en/mini-cooper-sd-specs/82753			https://www.cars-data.com/en/mercedes-benz-cla-250-specs/82482
+step5:			https://www.cars-data.com/en/mini-cooper-sd-specs/82753/tech		https://www.cars-data.com/en/mercedes-benz-cla-250-specs/82482/tech
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+start_url = https://www.auto-data.net/en/allbrands
+
+
+			MINI 											Mercedes
+
+step1(models):		https://www.auto-data.net/en/mini-brand-168						https://www.auto-data.net/en/mercedes-benz-brand-138
+step2(model-year):	https://www.auto-data.net/en/mini-hatch-model-1704					https://www.auto-data.net/en/mercedes-benz-cla-model-2015
+step3:			https://www.auto-data.net/en/mini-hatch-f56-3-door-generation-8645			https://www.auto-data.net/en/mercedes-benz-cla-coupe-c117-facelift-2016-generation-4746
+step4:			https://www.auto-data.net/en/mini-hatch-f56-3-door-jcw-2.0-231hp-automatic-21643	https://www.auto-data.net/en/mercedes-benz-cla-coupe-c117-facelift-2016-amg-cla-45-381hp-4matic-dct-23338
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+start_url = https://www.car.info/en-se/brands
+
+			MINI 									Mercedes
+
+step1(models):		https://www.car.info/en-se/mini						https://www.car.info/en-se/mercedes-benz
+step2(model-year):	https://www.car.info/en-se/mini/hatch					https://www.car.info/en-se/mercedes-benz/cla-class
+step3:			https://www.car.info/en-se/mini/hatch/f56-1917				https://www.car.info/en-se/mercedes-benz/cla-class/c117-facelift-10156267
+step4:			https://www.car.info/en-se/mini/hatch/cooper-sd-6615613			https://www.car.info/en-se/mercedes-benz/cla-class/cla-250-10275743
+step5:			https://www.car.info/en-se/mini/hatch/f56-a6-6649397			https://www.car.info/en-se/mercedes-benz/cla-class/c117-facelift-a-10275744
+step6:			https://www.car.info/en-se/mini/hatch/f56-a6-6649397/specs		https://www.car.info/en-se/mercedes-benz/cla-class/c117-facelift-a-10275744/specs
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CAR PERFORMANCE
+
+start_url = https://www.automobile-catalog.com/#gsc.tab=0
+
+			MINI 													Mercedes
+
+step1(models):		https://www.automobile-catalog.com/list-mini.html#gsc.tab=0						https://www.automobile-catalog.com/list-mercedes-benz.html#gsc.tab=0
+
+step2(model-year):	https://www.automobile-catalog.com/model/mini/mini_3gen.html#gsc.tab=0					https://www.automobile-catalog.com/model/mercedes-benz/cla_c117.html#gsc.tab=0
+
+step3:			https://www.automobile-catalog.com/make/mini/mini_3gen/mini_3_hatch_cooper/2014.html#gsc.tab=0		https://www.automobile-catalog.com/make/mercedes-benz/cla_c117/cla_c117_sedan_4matic/2015.html#gsc.tab=0
+
+step4:			https://www.automobile-catalog.com/car/2014/2084150/mini_cooper_sd_3-door.html#gsc.tab=0		https://www.automobile-catalog.com/car/2015/1940075/mercedes-benz_cla_250_4matic.html#gsc.tab=0
+
+step5:			https://www.automobile-catalog.com/auta_details1.php#gsc.tab=0						https://www.automobile-catalog.com/auta_perf1.php#gsc.tab=0
+			https://www.automobile-catalog.com/auta_perf1.php#gsc.tab=0
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+start_url = https://www.horsepowerspecs.com/browse-by-make/
+
+			MINI 									Mercedes
+
+step1(models):		https://www.horsepowerspecs.com/make/mini-horsepower-torque-stats/	https://www.horsepowerspecs.com/make/mercedes-horsepower-torque-stats/
+step2(model-year):	https://www.horsepowerspecs.com/model/mini-hardtop/			https://www.horsepowerspecs.com/model/mercedes-cla45-amg/
+step3:			https://www.car.info/en-se/mini/hatch/f56-1917				https://www.car.info/en-se/mercedes-benz/cla-class/c117-facelift-10156267
+step4:			https://www.car.info/en-se/mini/hatch/cooper-sd-6615613			https://www.car.info/en-se/mercedes-benz/cla-class/cla-250-10275743
+step5:			https://www.car.info/en-se/mini/hatch/f56-a6-6649397			https://www.car.info/en-se/mercedes-benz/cla-class/c117-facelift-a-10275744
+step6:			https://www.car.info/en-se/mini/hatch/f56-a6-6649397/specs		https://www.car.info/en-se/mercedes-benz/cla-class/c117-facelift-a-10275744/specs
+
