@@ -5,7 +5,6 @@
 
 import scrapy
 
-
 class CarDataTechItem(scrapy.Item):
     # define the fields for your item here like:
     car_id = scrapy.Field()
@@ -51,3 +50,19 @@ class CarDataSizesItem(scrapy.Item):
     width = scrapy.Field()
     length = scrapy.Field()
     wheelbase = scrapy.Field()
+    
+class CarInfoItem(scrapy.Item):
+    # define the fields for your item here like:
+    brand = scrapy.Field()
+    generation = scrapy.Field()
+    model = scrapy.Field()
+    drive_wheel = scrapy.Field()
+    power_kw = scrapy.Field()
+    power_hp = scrapy.Field()
+    torque_nm = scrapy.Field()
+    cylinders = scrapy.Field()
+    eng_config = scrapy.Field()
+    eng_capacity = scrapy.Field()
+    drag_coefficient = scrapy.Field()
+    transmission = scrapy.Field()
+

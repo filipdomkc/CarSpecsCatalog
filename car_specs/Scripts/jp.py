@@ -1,4 +1,4 @@
-#!C:\Users\filip\OneDrive\Desktop\CarSpecs_data\car_specs\Scripts\python.exe
+#!C:\Users\filip\OneDrive\Desktop\CarSpecsProject\car_specs\Scripts\python.exe
 
 import sys
 import json
