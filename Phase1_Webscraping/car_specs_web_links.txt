@@ -47,10 +47,9 @@ step2(model-year):	https://www.automobile-catalog.com/model/mini/mini_3gen.html#
 step3:			https://www.automobile-catalog.com/make/mini/mini_3gen/mini_3_hatch_cooper/2014.html#gsc.tab=0		https://www.automobile-catalog.com/make/mercedes-benz/cla_c117/cla_c117_sedan_4matic/2015.html#gsc.tab=0
 
 step4:			https://www.automobile-catalog.com/car/2014/2084150/mini_cooper_sd_3-door.html#gsc.tab=0		https://www.automobile-catalog.com/car/2015/1940075/mercedes-benz_cla_250_4matic.html#gsc.tab=0
-
-step5:			https://www.automobile-catalog.com/auta_details1.php#gsc.tab=0						https://www.automobile-catalog.com/auta_perf1.php#gsc.tab=0
-			https://www.automobile-catalog.com/auta_perf1.php#gsc.tab=0
-
+				https://www.automobile-catalog.com/car/2007/285515/bmw_116i_3-door_steptronic.html
+				https://www.automobile-catalog.com/curve/2007/285515/bmw_116i_3-door_steptronic.html
+				https://www.automobile-catalog.com/performance/2007/285515/bmw_116i_3-door_steptronic.html
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 start_url = https://www.horsepowerspecs.com/browse-by-make/
