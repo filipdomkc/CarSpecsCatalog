@@ -3,7 +3,7 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from ..items import AutocatalogItem
 import re
-
+import requests
 class AutocatalogspiderSpider(CrawlSpider):
     name = "perf_catalog"
     allowed_domains = ["automobile-catalog.com"]
@@ -45,7 +45,7 @@ class AutocatalogspiderSpider(CrawlSpider):
         
         # Extract the URL
         url = response.url
-        match = re.search(r'(\d{6,7})', url)
+        match = re.search(r'(\d{5,7})', url)
         
         if match:
             car_id = match.group(1)  

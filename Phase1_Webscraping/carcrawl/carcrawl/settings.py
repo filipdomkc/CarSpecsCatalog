@@ -1,3 +1,5 @@
+import os
+proxy_url = os.environ.get('SMARTPROXY_URL')
 # Scrapy settings for carcrawl project
 #
 # For simplicity, this file contains only settings considered important or
@@ -50,11 +52,29 @@ ROBOTSTXT_OBEY = False
 #    "carcrawl.middlewares.CarcrawlSpiderMiddleware": 543,
 #}
 
+
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    "scrapy.downloadermiddlewares.cookies.CookiesMiddleware": 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+    "scrapy.downloadermiddlewares.cookies.CookiesMiddleware": 543,
+    "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": None,
+    "scrapy_rotated_proxy.downloadmiddlewares.proxy.RotatedProxyMiddleware": 750,
+    #"carcrawl.custom_middlewares.proxies_logging_middleware.ProxiesLoggingMiddleware": 751
+    #"scrapy_proxy_pool.middlewares.ProxyPoolMiddleware": 610,
+    #"scrapy_proxy_pool.middlewares.BanDetectionMiddleware": 620,
+}
+
+ROTATED_PROXY_ENABLED = True
+PROXY_STORAGE = 'scrapy_rotated_proxy.extensions.file_storage.FileProxyStorage'
+PROXY_FILE_PATH = ''
+
+HTTPS_PROXIES = [proxy_url]
+
+PROXY_SPIDER_CLOSE_WHEN_NO_PROXY = False
+PROXY_RELOAD_ENABLED = True
+#LOG = True
+#LOG_LEVEL = 'INFO'
+#LOG_FILE = 'scrapy.log'
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -93,21 +113,3 @@ ROBOTSTXT_OBEY = False
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
-
-
-PROXY_POOL_ENABLED = True
-
-DOWNLOADER_MIDDLEWARES = {
-    # ...
-    'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
-    'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
-    # ...
-}
-
-
-"""
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy_rotating_proxies.middlewares.RotatingProxyMiddleware': 350,
-    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 400,
-}
-"""

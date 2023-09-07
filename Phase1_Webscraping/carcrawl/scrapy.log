@@ -1,0 +1,717 @@
+2023-09-07 12:53:16 [scrapy.utils.log] INFO: Scrapy 2.10.1 started (bot: carcrawl)
+2023-09-07 12:53:16 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.2 1 Aug 2023), cryptography 41.0.3, Platform Windows-10-10.0.22621-SP0
+2023-09-07 12:53:16 [scrapy.addons] INFO: Enabled addons:
+[]
+2023-09-07 12:53:16 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'carcrawl',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'carcrawl.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['carcrawl.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'}
+2023-09-07 12:53:16 [scrapy.extensions.telnet] INFO: Telnet Password: fc103a37c9c94c90
+2023-09-07 12:53:16 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2023-09-07 12:53:16 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_rotated_proxy.downloadmiddlewares.proxy.RotatedProxyMiddleware',
+ 'carcrawl.custom_middlewares.proxies_logging_middleware.ProxiesLoggingMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-09-07 12:53:16 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-09-07 12:53:16 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-09-07 12:53:16 [scrapy.core.engine] INFO: Spider opened
+2023-09-07 12:53:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-09-07 12:53:16 [scrapy_rotated_proxy.extensions.file_storage] INFO: FileProxyStorage opened
+2023-09-07 12:53:16 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: RotatedProxyMiddleware opened with backend: FileProxyStorage
+2023-09-07 12:53:16 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Loaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:16 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-09-07 12:53:16 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:16 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/auta_sp_browse_2.php using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-abarth.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-ac.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-acm.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-acura.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-aero.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-albany.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-albar.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-alfa_romeo.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-alfa_romeo_brasil.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-alfa_romeo_south_africa.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-alken.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-allard.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-allstate.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-alpina.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-alpine.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-alpine_renault.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:20 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:20 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:20 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/list-zoe.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:21 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/abarth/simca_based_coupes.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:21 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/alfa_romeo_brasil/2300_brasil.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:21 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/abarth/simca_1000.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:21 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/acm/aro_10.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:21 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/alfa_romeo_south_africa/gtv_za.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/albar/super_kaefer.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/albar/jet.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/alken/d2.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/albany/vintage_car.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/allard/sports_allard.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/alpine_renault/mini-alpine.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/alpine_renault/alpine_v6.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/zoe/z3000.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:23 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:23 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:23 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/alpina/z8_alpina.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:23 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:23 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:23 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/alfa_romeo/tonale.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:24 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/aero/r_1500_rekord_prototype.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:24 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/model/aero/p_750_pony_prototype.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:24 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo_brasil/2300_brasil/2300_brasil/1986.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:24 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/abarth/simca_1000/simca_abarth_1150/1965.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:24 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/acm/aro_10/off_4wd_convertible/1992.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:24 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:24 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/acm/aro_10/off_4wd_convertible/1991.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:25 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/abarth/1000_coupe_bertone/1000_otr_bertone/1965.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:25 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/abarth/ot_spider/ot_sport_spider/1966.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:25 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo_south_africa/gtv_za/gtv_za/1985.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:25 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo_south_africa/gtv_za/gtv_za/1984.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:25 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alpine_renault/mini-alpine/mini-alpine/1970.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:26 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:26 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:26 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/zoe/z3000/z3000_st_wagon/1986.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:26 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:26 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:26 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alpina/2500-3_0cs_e09_alpina/2500-3_0cs_e09_alpina/1971.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:26 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:26 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:26 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alpine_renault/alpine_a610/alpine_a610/1991.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:26 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:26 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:26 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alpine_renault/alpine_a-110/a-110_berlinette_serie_2/1976.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:27 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo/stelvio_1/stelvio_1_1_qv/2018.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:27 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo/stelvio_1/stelvio_1_1_q4/2017.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:27 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/palm_beach_ii/palm_beach_ii_roadster/1956.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:28 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:28 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:28 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1965/212180/simca_abarth_1150_corsa_6-speed.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:28 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:28 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:28 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/aero/p_750_pony_prototype/p_750_pony_prototype/1946.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:29 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:29 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:29 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/aero/500_10_hp/500_10_hp_roadster/1929.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:29 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:29 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:29 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/aero/30_aero/30_aero/1946.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:30 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:30 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:30 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1965/1760180/fiat_abarth_otr_1000_coupe_bertone.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:33 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:33 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:33 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1984/144110/alfa_romeo_gtv6_3_0.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:34 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:34 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:34 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1991/1763210/acm_off_4wd_1_6_turbodiesel_convertible.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:35 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:35 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:35 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1985/144110/alfa_romeo_gtv6_3_0.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:37 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:37 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:37 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1986/2921675/zoe_z3000_st_wagon.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:38 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:38 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:38 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1971/78365/bmw_alpina_3_0_csl.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:39 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:39 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:39 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1966/1760150/fiat_abarth_ot_1600_sport_spider.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:41 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:41 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:41 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1991/224090/alpne_renault_a610_turbo.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:42 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:42 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:42 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1956/223145/allard_palm_beach_mk_ii_3_4l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:43 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:43 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:43 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/2018/2680940/alfa_romeo_stelvio_quadrifoglio.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:44 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:44 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:44 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1946/213440/aero_p_750_pony.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:45 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/2018/2912315/alfa_romeo_stelvio_quadrifoglio_nring.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:45 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1929/40505/aero_50010_hp.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:47 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:47 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:47 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1946/213395/aero_30.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:48 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:48 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:48 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/2018/2629355/alfa_romeo_stelvio_quadrifoglio_automatic.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:49 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:49 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:49 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1970/1762295/mini_alpine.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:51 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:51 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:51 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1956/223130/allard_palm_beach_mk_ii_2_5l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:52 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:52 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:52 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1991/1763120/acm_off_4wd_1_6_diesel_convertible.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:52 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:52 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:52 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1991/1763105/acm_off_4wd_1_6_convertible.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:53 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:53 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:53 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/2017/2533085/alfa_romeo_stelvio_q4_2_2_multijet_ii_16v_210.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:53 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:53 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:53 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/2017/2533070/alfa_romeo_stelvio_q4_2_0_turbo_280.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:54 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:54 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:54 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/2017/2533100/alfa_romeo_stelvio_q4_2_0_turbo_200.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:56 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:56 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:56 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1976/144785/alpine_renault_berlinette_1600_sx.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.automobile-catalog.com/performance/1966/1760150/fiat_abarth_ot_1600_sport_spider.html> (referer: https://www.automobile-catalog.com/make/abarth/ot_spider/ot_sport_spider/1966.html)
+Traceback (most recent call last):
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\defer.py", line 277, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\Phase1_Webscraping\carcrawl\carcrawl\spiders\perf_catalog.py", line 91, in parse_performance_links
+    item['gear4th_80_120'] = response.xpath('//font[contains(text(),"(or top gear if total number of gears <4):")]/../../../td/p/font/b/text()')[1].get()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\parsel\selector.py", line 143, in __getitem__
+    o = super().__getitem__(pos)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+2023-09-07 12:53:57 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:57 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:57 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1976/65555/alpine_renault_berlinette_1300.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:58 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:58 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:58 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1992/1763210/acm_off_4wd_1_6_turbodiesel_convertible.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:53:59 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:53:59 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:53:59 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1992/1763120/acm_off_4wd_1_6_diesel_convertible.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:00 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:00 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:00 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1992/1763105/acm_off_4wd_1_6_convertible.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:00 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:00 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:00 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/aero/r_1500_rekord_prototype/r_1500_rekord_prototype/1946.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:01 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:01 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:01 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1965/212165/simca_abarth_1150_corsa.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:01 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:01 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:01 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1965/212150/simca_abarth_1150_ss_6-speed.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:01 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:01 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:01 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1965/212135/simca_abarth_1150_ss.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.automobile-catalog.com/performance/1970/1762295/mini_alpine.html> (referer: https://www.automobile-catalog.com/make/alpine_renault/mini-alpine/mini-alpine/1970.html)
+Traceback (most recent call last):
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\defer.py", line 277, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\Phase1_Webscraping\carcrawl\carcrawl\spiders\perf_catalog.py", line 91, in parse_performance_links
+    item['gear4th_80_120'] = response.xpath('//font[contains(text(),"(or top gear if total number of gears <4):")]/../../../td/p/font/b/text()')[1].get()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\parsel\selector.py", line 143, in __getitem__
+    o = super().__getitem__(pos)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+2023-09-07 12:54:02 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:02 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:02 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1965/212120/simca_abarth_1150_s.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.automobile-catalog.com/performance/1946/213440/aero_p_750_pony.html> (referer: https://www.automobile-catalog.com/make/aero/p_750_pony_prototype/p_750_pony_prototype/1946.html)
+Traceback (most recent call last):
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\defer.py", line 277, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\Phase1_Webscraping\carcrawl\carcrawl\spiders\perf_catalog.py", line 91, in parse_performance_links
+    item['gear4th_80_120'] = response.xpath('//font[contains(text(),"(or top gear if total number of gears <4):")]/../../../td/p/font/b/text()')[1].get()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\parsel\selector.py", line 143, in __getitem__
+    o = super().__getitem__(pos)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+2023-09-07 12:54:03 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:03 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:03 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1965/212105/simca_abarth_1150.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.automobile-catalog.com/performance/1946/213395/aero_30.html> (referer: https://www.automobile-catalog.com/make/aero/30_aero/30_aero/1946.html)
+Traceback (most recent call last):
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\defer.py", line 277, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\Phase1_Webscraping\carcrawl\carcrawl\spiders\perf_catalog.py", line 91, in parse_performance_links
+    item['gear4th_80_120'] = response.xpath('//font[contains(text(),"(or top gear if total number of gears <4):")]/../../../td/p/font/b/text()')[1].get()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\parsel\selector.py", line 143, in __getitem__
+    o = super().__getitem__(pos)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+2023-09-07 12:54:03 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:03 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:03 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/palm_beach/palm_beach_roadster/1952.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:04 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:04 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:04 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/m_drophead_coupe/m_drophead_coupe/1952.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:05 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/k3/k3_roadster/1952.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:05 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/k2/k2_roadster/1950.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:05 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/j2x_r/j2x/1951.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:05 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/j2x_r/j2r/1955.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:05 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:05 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/palm_beach_ii/palm_beach_ii_gt/1957.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:05 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.automobile-catalog.com/performance/1929/40505/aero_50010_hp.html> (referer: https://www.automobile-catalog.com/make/aero/500_10_hp/500_10_hp_roadster/1929.html)
+Traceback (most recent call last):
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\defer.py", line 277, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\Phase1_Webscraping\carcrawl\carcrawl\spiders\perf_catalog.py", line 91, in parse_performance_links
+    item['gear4th_80_120'] = response.xpath('//font[contains(text(),"(or top gear if total number of gears <4):")]/../../../td/p/font/b/text()')[1].get()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\parsel\selector.py", line 143, in __getitem__
+    o = super().__getitem__(pos)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+2023-09-07 12:54:07 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:07 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:07 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_drophead/1950.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:07 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:07 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:07 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_drophead/1949.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:08 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:08 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:08 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_drophead/1948.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:10 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:10 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:10 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1946/213425/aero_r_1500_rekord.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:11 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:11 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:11 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_drophead/1947.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:12 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:12 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:12 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_drophead/1946.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:13 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:13 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:13 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_4-seater/1950.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:14 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:14 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:14 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1952/1762010/allard_m_drophead_coupe.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:16 [scrapy.extensions.logstats] INFO: Crawled 87 pages (at 87 pages/min), scraped 26 items (at 26 items/min)
+2023-09-07 12:54:17 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:17 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:17 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_4-seater/1949.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:17 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:17 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:17 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1952/223010/allard_palm_beach_21z.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:18 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:18 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:18 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1952/222995/allard_palm_beach_21c.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:19 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:19 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1950/222935/allard_k2_5_4l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:20 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:20 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:20 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1952/223025/allard_k3_3_6l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:21 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:21 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1955/223115/allard_j2r.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1949/1437515/allard_sports_drophead_coupe_3_9l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:22 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:22 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1949/222830/allard_sports_drophead_coupe_3_6l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:23 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:23 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:23 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1951/223085/allard_j2x_5_4l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:25 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:25 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1947/1437515/allard_sports_drophead_coupe_3_9l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:27 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1946/1437515/allard_sports_drophead_coupe_3_9l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:27 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:27 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1946/222830/allard_sports_drophead_coupe_3_6l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:28 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:28 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:28 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1957/223655/allard_gt_3_4l_3_77_axle.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:31 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:31 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:31 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1948/1437515/allard_sports_drophead_coupe_3_9l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:31 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:31 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:31 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1950/1437515/allard_sports_drophead_coupe_3_9l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:32 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:32 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:32 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1949/222815/allard_sports_4-seater_tourer_3_6l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:34 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:34 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:34 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1950/222830/allard_sports_drophead_coupe_3_6l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:35 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:35 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:35 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1948/222830/allard_sports_drophead_coupe_3_6l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:37 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:37 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:37 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1957/223160/allard_gt_3_4l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:37 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:37 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:37 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1947/222830/allard_sports_drophead_coupe_3_6l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:38 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:38 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:38 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1951/223070/allard_j2x_3_9l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:38 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:38 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:38 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1950/222920/allard_k2_4_4l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:38 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:38 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:38 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1950/222905/allard_k2_3_6l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.automobile-catalog.com/performance/1946/213425/aero_r_1500_rekord.html> (referer: https://www.automobile-catalog.com/make/aero/r_1500_rekord_prototype/r_1500_rekord_prototype/1946.html)
+Traceback (most recent call last):
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\defer.py", line 277, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\Phase1_Webscraping\carcrawl\carcrawl\spiders\perf_catalog.py", line 91, in parse_performance_links
+    item['gear4th_80_120'] = response.xpath('//font[contains(text(),"(or top gear if total number of gears <4):")]/../../../td/p/font/b/text()')[1].get()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\filip\OneDrive\Desktop\CarSpecsCatalog\venv_cars\Lib\site-packages\parsel\selector.py", line 143, in __getitem__
+    o = super().__getitem__(pos)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+2023-09-07 12:54:39 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:39 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:39 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_2-seater/1950.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:39 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:39 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:39 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_2-seater/1949.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:39 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:39 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:39 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_2-seater/1948.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:40 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:40 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:40 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_2-seater/1947.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:42 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:42 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:42 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1950/222815/allard_sports_4-seater_tourer_3_6l.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:42 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:42 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:42 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/allard/sports_allard/sports_2-seater/1946.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:43 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:43 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:43 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1986/144740/alfa_romeo_2300_ti_4.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:44 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:44 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:44 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/performance/1986/144755/alfa_romeo_2300_ti_alcool.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:45 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo/stelvio_1/stelvio_1_1_rwd/2017.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:45 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo/ar_51/ar_51/1952.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:45 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo/tonale/tonale_1_1_q4/2024.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:45 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo/tonale/tonale_1_1_q4/2023.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:45 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:45 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo/tonale/tonale_1_1_2wd/2023.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:47 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:47 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:47 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alfa_romeo/tonale/tonale_1_1_2wd/2022.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:47 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:47 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:47 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/albar/jet/jet/1980.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:47 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Reloaded 1 https proxy from FileProxyStorage
+2023-09-07 12:54:47 [scrapy_rotated_proxy.downloadmiddlewares.proxy] INFO: Left 1 https proxy to run
+2023-09-07 12:54:47 [carcrawl.custom_middlewares.proxies_logging_middleware] INFO: Requesting https://www.automobile-catalog.com/make/alpine_renault/alpine_a-310/a-310/1976.html using proxy: https://gate.smartproxy.com:7000
+2023-09-07 12:54:48 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2023-09-07 12:54:48 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2023-09-07 12:54:59 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
