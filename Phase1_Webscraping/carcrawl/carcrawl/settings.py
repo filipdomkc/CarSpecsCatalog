@@ -1,5 +1,6 @@
 import os
 proxy_url = os.environ.get('SMARTPROXY_URL')
+proxylab_url = os.environ.get('PROXYLAB_URL')
 # Scrapy settings for carcrawl project
 #
 # For simplicity, this file contains only settings considered important or
@@ -77,16 +78,10 @@ ROTATED_PROXY_ENABLED = True
 PROXY_STORAGE = 'scrapy_rotated_proxy.extensions.file_storage.FileProxyStorage'
 PROXY_FILE_PATH = ''
 
-HTTPS_PROXIES = ['https://filipdom93:QpGpgf4yg2ElxxnY54@gate.smartproxy.com:7000',
-                 'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777',
-                'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777',
-                'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777',
-                'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777',
-                'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777'
+HTTPS_PROXIES = [proxy_url,
+                 proxylab_url,
     ]
 
-HTTP_PROXIES = ['http://filipdom93:QpGpgf4yg2ElxxnY54@gate.smartproxy.com:7000',
-                'http://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777']
 
 PROXY_SPIDER_CLOSE_WHEN_NO_PROXY = False
 PROXY_RELOAD_ENABLED = True
@@ -108,7 +103,7 @@ PROXY_RELOAD_ENABLED = True
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
-#AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_ENABLED = True
 # The initial download delay
 #AUTOTHROTTLE_START_DELAY = 2
 # The maximum download delay to be set in case of high latencies
