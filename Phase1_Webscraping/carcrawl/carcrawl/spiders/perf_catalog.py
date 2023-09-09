@@ -8,10 +8,11 @@ class AutocatalogspiderSpider(CrawlSpider):
     name = "perf_catalog"
     allowed_domains = ["automobile-catalog.com"]
     start_urls = ["https://www.automobile-catalog.com/auta_sp_browse_2.php"]
-    
+    """
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
     }
+    """
     
         # Rule 1: Extract links containing 'list-'
     rules = (
@@ -23,21 +24,21 @@ class AutocatalogspiderSpider(CrawlSpider):
         # Rule 2: Extract links containing '/model'
         model_links = LinkExtractor(allow=('/model')).extract_links(response)
         for model_link in model_links:
-            yield scrapy.Request(model_link.url, callback=self.parse_model_links, headers=self.headers)
+            yield scrapy.Request(model_link.url, callback=self.parse_model_links)
 
     # Callback for links containing '/model'
     def parse_model_links(self, response):
         # Rule 3: Extract links containing '/make'
         make_links = LinkExtractor(allow=('/make')).extract_links(response)
         for make_link in make_links:
-            yield scrapy.Request(make_link.url, callback=self.parse_make_links, headers=self.headers)
+            yield scrapy.Request(make_link.url, callback=self.parse_make_links)
 
     # Callback for links containing '/make'
     def parse_make_links(self, response):
         # Rule 4: Extract links containing '/performance'
         performance_links = LinkExtractor(allow=('/performance')).extract_links(response)
         for performance_link in performance_links:
-            yield scrapy.Request(performance_link.url, callback=self.parse_performance_links, headers=self.headers)
+            yield scrapy.Request(performance_link.url, callback=self.parse_performance_links)
 
     # Callback for links containing '/performance'
     def parse_performance_links(self, response):
@@ -46,16 +47,29 @@ class AutocatalogspiderSpider(CrawlSpider):
         # Extract the URL
         url = response.url
         match = re.search(r'(\d{5,7})', url)
+        match_year = re.search(r'\b\d{4}\b(?!\\d)', url)
         
         if match:
-            car_id = match.group(1)  
+            car_id = match.group(1) 
+        else:
+            car_id ="" 
+        
+        if match_year:
+            year = match_year.group()
+        else:
+            year = ""
+            
+
+        
         
         print("Parsing performance page:", response.url)
         item['car_id'] = car_id
         item['brand'] = response.css('.v .v table+ table tr:nth-child(7) b::text').get()
         item['model'] = response.css('.v tr:nth-child(8) a font::text').get()
+        item['year'] = year
         item['generation'] = response.css('tr:nth-child(10) td+ td p b a font::text').get()
         item['engine_type'] = response.css('.v .v table+ table tr:nth-child(18) b::text').get()
+        item['power'] = response.xpath('//font[text()="Horsepower net:"]/../../../td/p/font/b/text()').get()
         item['cyl_align'] = response.css('.v .v table+ table tr:nth-child(20) b::text').get()
         item['eng_capacity'] = response.css('.v .v table+ table tr:nth-child(21) b::text').get()
         item['transmission_type'] = response.css('tr:nth-child(24) b::text').get()
@@ -88,7 +102,12 @@ class AutocatalogspiderSpider(CrawlSpider):
         item['acc_0_270'] = response.css('table:nth-child(8) tr:nth-child(24) b::text').get()
         item['acc_0_300'] = response.css('table:nth-child(8) tr:nth-child(25) b::text').get()
         item['gear4th_60_100'] = response.xpath('//font[contains(text(),"(or top gear if total number of gears <4):")]/../../../td/p/font/b/text()').get()
-        item['gear4th_80_120'] = response.xpath('//font[contains(text(),"(or top gear if total number of gears <4):")]/../../../td/p/font/b/text()')[1].get()
+        
+        try:
+            item['gear4th_80_120'] = response.xpath('//font[contains(text(),"(or top gear if total number of gears <4):")]/../../../td/p/font/b/text()')[1].get()
+        except IndexError:
+            item['gear4th_80_120'] = None  # Or set a default value if necessary
+            
         item['gear5th_80_120'] = response.xpath('//font[contains(text(),"80-120 km/h on Vth gear (sec):")]/../../../td/p/font/b/text()').get()
         item['gear6th_80_120'] = response.xpath('//font[contains(text(),"80-120 km/h on VIth gear (sec):")]/../../../td/p/font/b/text()').get()
         item['gear1st_top_speed'] = response.xpath('//font[text()="I:"]/../../../td/p/font/b/text()').get()

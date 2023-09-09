@@ -16,7 +16,14 @@ NEWSPIDER_MODULE = "carcrawl.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+USER_AGENT_LIST = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.59",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 OPR/77.0.4054.254",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1"
+]
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -27,10 +34,10 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-#DOWNLOAD_DELAY = 3
+#DOWNLOAD_DELAY = 1
 # The download delay setting will honor only one of:
-#CONCURRENT_REQUESTS_PER_DOMAIN = 16
-#CONCURRENT_REQUESTS_PER_IP = 16
+#CONCURRENT_REQUESTS_PER_DOMAIN = 10
+#CONCURRENT_REQUESTS_PER_IP = 10
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = True
@@ -59,6 +66,8 @@ DOWNLOADER_MIDDLEWARES = {
     "scrapy.downloadermiddlewares.cookies.CookiesMiddleware": 543,
     "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": None,
     "scrapy_rotated_proxy.downloadmiddlewares.proxy.RotatedProxyMiddleware": 750,
+    "scrapy.downloadermiddlewares.useragent.UserAgentMiddleware": None,
+    "carcrawl.middlewares.RotateUserAgentMiddleware": 400, 
     #"carcrawl.custom_middlewares.proxies_logging_middleware.ProxiesLoggingMiddleware": 751
     #"scrapy_proxy_pool.middlewares.ProxyPoolMiddleware": 610,
     #"scrapy_proxy_pool.middlewares.BanDetectionMiddleware": 620,
@@ -68,7 +77,16 @@ ROTATED_PROXY_ENABLED = True
 PROXY_STORAGE = 'scrapy_rotated_proxy.extensions.file_storage.FileProxyStorage'
 PROXY_FILE_PATH = ''
 
-HTTPS_PROXIES = [proxy_url]
+HTTPS_PROXIES = ['https://filipdom93:QpGpgf4yg2ElxxnY54@gate.smartproxy.com:7000',
+                 'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777',
+                'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777',
+                'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777',
+                'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777',
+                'https://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777'
+    ]
+
+HTTP_PROXIES = ['http://filipdom93:QpGpgf4yg2ElxxnY54@gate.smartproxy.com:7000',
+                'http://customer-filipdom93:Mozoobew12@pr.oxylabs.io:7777']
 
 PROXY_SPIDER_CLOSE_WHEN_NO_PROXY = False
 PROXY_RELOAD_ENABLED = True
@@ -92,7 +110,7 @@ PROXY_RELOAD_ENABLED = True
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-#AUTOTHROTTLE_START_DELAY = 5
+#AUTOTHROTTLE_START_DELAY = 2
 # The maximum download delay to be set in case of high latencies
 #AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to

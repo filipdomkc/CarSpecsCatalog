@@ -4,9 +4,23 @@
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+import logging
 
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
+
+import random
+from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
+from carcrawl.settings import USER_AGENT_LIST  # Adjust this import as needed
+
+logger = logging.getLogger(__name__)
+class RotateUserAgentMiddleware(UserAgentMiddleware):
+    def process_request(self, request, spider):
+        user_agent = random.choice(USER_AGENT_LIST)
+        request.headers['User-Agent'] = user_agent
+        
+        # Log the selected User-Agent
+        logger.debug(f"User-Agent selected for {request}: {user_agent}")
 
 
 class CarcrawlSpiderMiddleware:
