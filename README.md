@@ -14,7 +14,7 @@ This project is a web scraping application built using Scrapy, a Python library,
 
 - **Rotating Proxies**: Some websites may implement scraping protection mechanisms such as IP blocking. To circumvent these restrictions, rotating proxies are used to ensure uninterrupted data collection.
 
-##Usage of Scraped Data:
+## Usage of Scraped Data:
 
 The dataset extracted from various car specifications websites is versatile and can be valuable for a range of predictive modeling and analytical tasks, including:
 
